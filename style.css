@@ -48,6 +48,7 @@ body {
     min-height: 100vh; 
     justify-content: center;
     padding: 1em;
+    background-color: #222;
 }
 
 header h4 {
@@ -79,7 +80,12 @@ p {
    h5 { font-size: 20px; }
    h6 { font-size: 14px; }
    p, li { font-size: 18px; }
-   body { padding: 0px; }
+   body { padding: 0.5em; }
+   main { padding: 0 20px !important; }
+   .section { padding: 20px 0; }
+   p img { max-width: 120px; max-height: 120px; }
+   .skill-level, .skill-label-right { font-size: 70%; }
+   .skill-name { font-size: 90%; }
 }
 
 a, a:visited {
@@ -144,9 +150,10 @@ p img {
 
 main {
 	max-width: 900px;
-	margin: 0 auto;
-	padding-left:16px;
-	padding-right:16px;
+	margin: 20px auto;
+	padding: 0 50px !important;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
 .section {
@@ -155,17 +162,25 @@ main {
 
 @media screen and (max-width: 767px) {
     .section {
-        padding: 20px 0;
+        padding: 10px 0;
     }
-    
+    main {
+        padding: 0 20px !important;
+        border-radius: 30px;
+    }
+    main#home {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 
 footer {
 	margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     font-size: 70%;
     opacity: 0.5;
     line-height: 2;
@@ -179,8 +194,8 @@ main#home {
 
 @media screen and (max-width: 767px) {
     main#home {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 13px;
+        padding-right: 13px;
     }
 }
 
